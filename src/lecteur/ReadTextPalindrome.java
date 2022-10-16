@@ -11,6 +11,7 @@ public class ReadTextPalindrome extends TextReader {
 
 	public ReadTextPalindrome(BufferedReader buffer) {
 		super(buffer);
+		this.buffer = buffer;
 	}
 	
 	public void workFile() {

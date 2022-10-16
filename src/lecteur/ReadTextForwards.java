@@ -10,11 +10,13 @@ public class ReadTextForwards extends TextReader {
 	
 	public ReadTextForwards(BufferedReader buffer) {
 		super(buffer);
+		this.buffer = buffer;
 	}
 	
 	
 	public void workFile() {
 		String line;
+		//System.out.println(this.buffer);
 		try {
 			// Afficher les lignes du buffer dans l'ordre
 			while((line = this.buffer.readLine()) != null) {

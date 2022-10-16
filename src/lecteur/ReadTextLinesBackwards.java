@@ -11,6 +11,7 @@ public class ReadTextLinesBackwards extends TextReader {
 	
 	public ReadTextLinesBackwards(BufferedReader buffer) {
 		super(buffer);
+		this.buffer = buffer;
 	}
 	
 	public void workFile() {

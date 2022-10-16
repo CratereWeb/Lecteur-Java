@@ -48,7 +48,7 @@ public class Main {
 			textReader.workFile();
 			
 			
-			//textReader.ejectFile();
+			textReader.ejectFile();
 			
 			
 		
@@ -138,17 +138,19 @@ public class Main {
 				+ "N - Charger un autre fichier" + "\n\n");
 		
 		
-		String userChoice = null;
+		//String userChoice = null;
 		
 		
 		switch( sc.next().charAt(0) ) {
-			case '1': userChoice = "read-forward"; break;
-			case '2': userChoice = "read-lines-backwards"; break;
-			case '3': userChoice = "read-in-palindrome"; break;			
+			case '1': return "read-forward";
+			case '2': return "read-lines-backwards";
+			case '3': return "read-in-palindrome";
+			case 'N': return "change-file";
+			default: return "";
 		}
 		
 		
-		return userChoice;
+		//return userChoice;
 		
 	}
 	
